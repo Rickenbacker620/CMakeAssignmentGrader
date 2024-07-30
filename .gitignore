@@ -1,0 +1,7 @@
+*
+
+!grader
+!grader/CMakeLists.txt
+!grader/grader.cmake
+!.gitignore
+!CMakeLists.txt
