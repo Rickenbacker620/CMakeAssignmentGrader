@@ -1,0 +1,19 @@
+{
+  "version": 6,
+  "configurePresets": [
+    {
+      "name": "default",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+        "CMAKE_C_STANDARD": "11",
+        "BUILD_GMOCK": "OFF",
+
+        "CMAKE_RUNTIME_OUTPUT_DIRECTORY": "${sourceDir}/bin",
+        "STUDENT_ID_PLACEHOLDER": "<STUDENT_ID>",
+        "CMAKE_MODULE_PATH": "${sourceDir}/cmake",
+        "ASSIGNMENTS_ROOT_DIR": "${sourceDir}/assignments",
+        "TESTS_ROOT_DIR": "${sourceDir}/tests"
+      }
+    }
+  ]
+}

@@ -1,8 +1,7 @@
 *
 
-!grader
-!grader/CMakeLists.txt
-!grader/grader.cmake
-!grader/assignment-download.cmake
 !.gitignore
 !CMakeLists.txt
+!cmake
+!cmake/*
+!CMakePresets.json

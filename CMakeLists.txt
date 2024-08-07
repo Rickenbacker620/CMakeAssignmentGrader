@@ -1,21 +1,33 @@
 cmake_minimum_required(VERSION 3.17)
 project("CMake Assignment Grader")
 
-set(CMAKE_C_STANDARD 11)
-set(ASSIGNMENTS_ROOT_DIR ${CMAKE_SOURCE_DIR}/assignments)
-set(BUILD_GMOCK OFF)
-set(INSTALL_GTEST OFF)
-
-include(FetchContent)
-FetchContent_Declare(
-  googletest
-  GIT_REPOSITORY https://github.com/google/googletest.git
-  GIT_TAG v1.15.0
+# Set student source files here
+set(STUDENT_SOURCES
+    example.c
 )
-FetchContent_MakeAvailable(googletest)
 
-include(CTest)
-include(GoogleTest)
-enable_testing()
+# Set the format of the repo URL here, <STUDENT_ID> placeholder will be replaced with STUDENT_ID
+set(REPO_URL_TEMPLATE
+    https://github.com/Example-ORG/examplehw-<STUDENT_ID>.git
+)
 
-add_subdirectory(grader)
+# Set student IDs here which will be used to replace the <STUDENT_ID> placeholder in the REPO_URL_TEMPLATE
+set(STUDENT_IDS
+    Student1
+    Student2
+)
+
+# Set test source files here
+set(TEST_SOURCES
+    example_tests.cpp
+)
+
+# Set the branch of the repo to pull from, default is main
+set(REPO_BRANCH
+    main
+)
+
+
+include(env-setup)
+include(pull-repos)
+include(build-tests)
