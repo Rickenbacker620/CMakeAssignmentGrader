@@ -23,6 +23,8 @@ set(STUDENT_IDS
     Student2
 )
 ```
+E.g.
+
 By setting `REPO_URL_TEMPLATE` to `https://github.com/Example-ORG/examplehw-<STUDENT_ID>.git` and `STUDENT_IDS` to `Tom` and `Jerry`, it will pull code from `https://github.com/Example-ORG/examplehw-Tom.git` and `https://github.com/Example-ORG/examplehw-Jerry.git`
 
 
