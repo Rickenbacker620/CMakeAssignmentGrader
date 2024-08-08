@@ -7,3 +7,4 @@
 !CMakePresets.json
 !tests
 !tests/example_tests.cpp
+!README.md
