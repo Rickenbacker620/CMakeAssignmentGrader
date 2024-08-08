@@ -12,7 +12,8 @@
         "STUDENT_ID_PLACEHOLDER": "<STUDENT_ID>",
         "CMAKE_MODULE_PATH": "${sourceDir}/cmake",
         "ASSIGNMENTS_ROOT_DIR": "${sourceDir}/assignments",
-        "TESTS_ROOT_DIR": "${sourceDir}/tests"
+        "TESTS_ROOT_DIR": "${sourceDir}/tests",
+        "COMMENTS_ROOT_DIR": "${sourceDir}/comments"
       }
     }
   ]

@@ -31,3 +31,4 @@ set(REPO_BRANCH
 include(env-setup)
 include(pull-repos)
 include(build-tests)
+include(gen-comments)

@@ -6,10 +6,10 @@ extern "C" {
 
 
 // Write your test cases here
-TEST(SanityCheck, TestEQ) {
+TEST(SanityCheck, TestEqual) {
     ASSERT_EQ(1, 1);
 }
 
-TEST(SanityCheck, TestEQ) {
+TEST(SanityCheck, TestNotEqual) {
     ASSERT_NE(1, 2);
 }
